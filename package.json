@@ -1,0 +1,22 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "movie app imdb database details plot",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movie",
+    "app",
+    "imdb",
+    "web",
+    "database"
+  ],
+  "author": "annie yt ng",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
