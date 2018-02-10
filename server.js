@@ -20,7 +20,6 @@ app.get('/', (req, res) => {
 app.get('/movie/:movieId', (req, res) => {
   let {movieId} = req.params
   let movie = movies[movieId]
-  console.log(movie)
   // returns whatever ID is in the string ie. movie/0 returns 0
   res.render('movie',{
     movie
@@ -29,12 +28,12 @@ app.get('/movie/:movieId', (req, res) => {
 
  app.get('/search', (req, res) => {
    let {movieQuery} = req.query
-   let movieResults = movies.filter(movie => {
+   let results = movies.filter(movie => {
     return movie.title.toLowerCase().includes(movieQuery.toLowerCase())
   })
-    res.render('movie', { 
-      movie: movieResults
-    })
+    res.render('search', {     
+      results,
+    }) 
  }) 
 
 // movie data
