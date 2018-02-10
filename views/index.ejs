@@ -1,0 +1,45 @@
+<% include partials/head %>
+
+<body>
+<div class = 'row'>
+  <header class ='smoked-weed-header col l12'>
+  </header>  
+</div>
+
+<div class='main-body'>
+  <div class = 'row'>
+    <h1> stories of ladies who smoke weed </h2>
+
+  </div>
+
+    <div class = 'row'>
+
+    <div class = 'index-body col l9'>
+    <div class = 'movie-index row'>
+
+    <% for (let i = 0; i < movies.length; i++) { %>
+
+    <div class = 'movie-index-image col l3'>
+    </div>
+    <% } %>
+    
+    <% for (let i = 0; i < movies.length; i++) { %>
+    <div class = 'movie-index-content col l9'>
+      <h2><%= movies[i].title %></h2>
+      <p><%= movies[i].director %></p>
+      <p><%= movies[i].year %></p>    
+      <p><%= movies[i].plot %></p>
+      <a href='/movie/<%= i %>'>smoke up some more</a>
+    </div>
+    <% } %>
+    </div>
+    </div>
+
+
+
+    <% include partials/search-bar %>
+
+</div>
+
+</body>
+</html>

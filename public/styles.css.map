@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.css"
+	],
+	"sourcesContent": [
+		".heading, h1 {\n  color: \"red\";\n  font-size: 32px; }\n\nh1 {\n  color: green;\n  font-weight: bold;\n  font-stretch: expanded;\n  letter-spacing: 5px;\n  background-color: pink;\n  text-align: center;\n  padding-top: 25px;\n  padding-bottom: 25px; }\n\n.movie {\n  padding: 10px; }\n\n/*# sourceMappingURL=styles.css.map */\n\n/*# sourceMappingURL=styles.css.map */"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,QAAQ,EAAE,AAAA,EAAE,CAAC;EACX,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI,GAAI;;AAErB,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,QAAQ;EACtB,cAAc,EAAE,GAAG;EACnB,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI,GAAI;;AAE1B,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI,GAAI;;AAEnB,sCAAsC;AAEtC,sCAAsC"
+}

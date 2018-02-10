@@ -1,0 +1,74 @@
+$heading-background-color : #FFD2D2;
+$heading-font-size: 40px;
+$background-color: #FFD2D2;
+
+body {
+  background-color: $background-color;
+  .main-body {
+      padding-right: 3rem;
+      padding-left: 3rem;
+  }
+}
+.smoked-weed-header{
+  background-repeat: repeat-x;
+  background-image: url('https://media.giphy.com/media/xvf01KZKd6rio/giphy-downsized.gif');
+  height: 13rem;
+  max-width: 100%;
+}
+.heading {
+  color: #46915D;
+  font-size: $heading-font-size;
+  font-weight: medium;
+}
+h1 {
+  @extend .heading;
+  letter-spacing: 1.5rem;
+}
+.sidenav{
+  .search {
+  max-width: 20rem;
+  text-align: right;
+  float: right;
+  }
+  h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    color: #46915D;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+
+  }
+  .search-button {
+    background-color: #A83F57;
+  }
+  .search-button:hover{
+    color: #A83F57;
+    background-color: #A9A29D;
+  }
+  .database-link {
+    color: #A83F57;
+  }
+  .database-link:hover {
+    color: #A9A29D;
+  }
+}
+.movie-index-content {
+  text-align: justify;
+  h2 {
+    font-size: 2.5rem;
+    color: #46915D;
+  }
+  a {
+    color: #A83F57;
+  }
+  a:hover {
+    color:#A9A29D;
+  }
+}
+.movie-content {
+  @extend .movie-index-content
+}
+
+.hidden {
+  visibility: hidden;
+}

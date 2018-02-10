@@ -1,0 +1,36 @@
+<% include partials/head %>
+
+<body>
+<div class = 'row'>
+  <header class ='smoked-weed-header col l12'>
+  </header>  
+</div>
+
+<div class='main-body'>
+  <div class = 'row'>
+    <h1> stories of ladies who smoke weed </h2>
+  </div>
+
+    <div class = 'row'>
+    <div class = 'index-body col l9'>
+      <div class = 'movie-index row'>
+      
+        <div class = 'movie-image col l3'>
+          <img class = 'movie-poster' src='<%= movie.poster %>'/>
+        </div>
+        </div>
+        <div class = 'movie-content col l9'>
+          <h2><%= movie.title %></h2>
+          <p><%= movie.director %></p>
+          <p><%= movie.year %></p>    
+          <p><%= movie.plot %></p>
+          <a class='return-to-homepage' href='/'>go back and find more girls to smoke with</a>
+        </div>
+    </div>
+
+    <% include partials/search-bar %>
+
+</div>
+
+</body>
+</html>
