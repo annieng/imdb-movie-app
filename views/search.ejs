@@ -4,16 +4,20 @@
     <div class='row'>
     
       <div class = 'movie-index-content col l9'>
+        <% if (results.length <= 0) { %>
+          <p> nobody to blaze with here, try somewhere else </p>
+        <% } else { %>
         <h2><%= results[i].title %></h2>
         <p><%= results[i].director %></p>
         <p><%= results[i].year %></p>    
         <a href='/movie/<%= i %>'>blaze some more</a>
       </div>
       <% } %>
+      <% } %>
     
     <% include partials/search-bar %>
     </div>
-    
+
     </div>   
   </div>
  </div>

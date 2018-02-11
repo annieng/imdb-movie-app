@@ -24,17 +24,17 @@ app.get('/movie/:movieId', (req, res) => {
   res.render('movie',{
     movie
   })
-});
+})
 
  app.get('/search', (req, res) => {
    let {movieQuery} = req.query
    let results = movies.filter(movie => {
     return movie.title.toLowerCase().includes(movieQuery.toLowerCase())
+    })
+      res.render('search', {
+        results
+    })
   })
-    res.render('search', {     
-      results,
-    }) 
- }) 
 
 // movie data
 const movies = [
@@ -82,6 +82,21 @@ const movies = [
     language: 'English',
     country: 'USA',
     poster: '/images/posters/jackiebrown.png'
+  },
+  {
+    title: 'Bully',
+    year: '2001',
+    rated: 'R',
+    released: '15 June 2001',
+    runtime: '1h 53min',
+    genre: 'Crime, Drama, Thriller',
+    director: 'Larry Clark',
+    writer: 'Zachary Long, Roger Pullis',
+    actors: 'Brad Renfro, Bijou Phillips, Rachel Miner',
+    plot: 'A pack of naïve teenagers conspire to murder a mutual friend, whose aggressive demeanor has proved too much.',
+    language: 'English',
+    country: 'USA',
+    poster: '/images/posters/bully.jpg'
   }
 ]
 
